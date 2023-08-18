@@ -213,6 +213,13 @@ input[type="submit"]{
     justify-content: center;
     margin-top: 50px;
     gap: 100px;
+    position: relative;
+}
+.line{
+    height: 100%;
+    width: 10px;
+    background-color: hsl(180, 66%, 49%);
+    position: absolute;
 }
 
 .card{
@@ -227,6 +234,7 @@ input[type="submit"]{
     align-items: center;
     padding: 22px;
     position: relative;
+    z-index: 999;
 }
 .icon{
     background-color: hsl(257, 27%, 26%);
@@ -297,10 +305,6 @@ footer{
     padding: 70px 0;
     align-items: center;
 }
-
-/* footer .logo{
-
-} */
 footer .logo p{
     font-size: 40px;
     font-weight: 700;
@@ -341,6 +345,7 @@ footer .logo p{
     height: 100%;
     width: 100%;
 }
+
 
 
 /* Tablet Design */

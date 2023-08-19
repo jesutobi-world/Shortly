@@ -325,6 +325,7 @@ input[type="submit"] {
     color: white;
     font-size: 24px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 footer {
@@ -379,13 +380,46 @@ footer .logo p {
     height: 30px;
     width: 30px;
     object-fit: cover;
+    
 }
 
-.socials a img {
-    height: 100%;
-    width: 100%;
+.socials a i {
+    color: white;
+    font-size: 35px;
 }
-
+/* General active states */
+nav>section>a:hover{
+    color: hsl(260, 8%, 14%);
+    transition: ease-in-out all 0.3s;
+}
+.button:hover{
+    background-color: #9be3e2;
+    color: white;
+    transition: ease-in-out all 0.3s;
+}
+.hero-button a:hover{
+    background-color: #9be3e2;
+    color: white;
+    transition: ease-in-out all 0.3s;
+}
+input[type="submit"]:hover{
+    background-color: #9be3e2;
+    color: white;
+    transition: ease-in-out all 0.3s;
+}
+.boost button:hover{
+    transition: ease-in-out all 0.3s;
+    background-color: #9be3e2;
+    color: white;
+}
+.footer-nav div a:hover{
+    color: hsl(180, 66%, 49%);
+    transition: ease-in-out all 0.3s;
+}
+.socials a i:hover{
+    color: hsl(180, 66%, 49%);
+    transition: ease-in-out all 0.3s;
+}
 
 
 /* Tablet Design */

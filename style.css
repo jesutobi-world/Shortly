@@ -168,7 +168,7 @@ main {
 .form-overlay {
     background-color: hsl(257, 27%, 26%);
     position: absolute;
-    top: -90px;
+    top: -95px;
     width: 90%;
     border-radius: 10px;
     overflow: hidden;
@@ -187,10 +187,36 @@ main {
     background-position: top right;
 }
 
-form input {
+form input{
     height: 60px;
     border-radius: 5px;
 }
+form div{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    gap: 5px;
+}
+form div input{
+    height: 60px;
+}
+form div p{
+    color: hsl(0, 87%, 67%);
+    font-style: italic;
+    font-size: 14px;
+}
+.error-border{
+    border: 3px solid hsl(0, 87%, 67%);
+}
+
+.error{
+    display: none;
+}
+
+.error-placeholder::placeholder {
+    color: hsl(0, 84%, 78%);
+  }
+
 
 input[type="text"] {
     padding-left: 15px;
@@ -541,15 +567,34 @@ input[type="submit"]:hover{
         height: 130px;
         width: 100%;
     }
-    form input{
+    form div input{
         height: 50px;
     }
-    input[type="text"]{
+    form div{
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        justify-content: center;
+        position: relative;
+    }
+    form div p{
+        font-size: 12px;
+        position: absolute;
+        top: 110%;
+    }
+    form div:first-child{
         width: calc(95% - 150px);
+    }
+    form div:last-child{
+        width: 150px;
+    }
+    input[type="text"]{
         font-size: 18px;
+        width: 100%;
     }
     input[type="submit"]{
-        width: 150px;
+        width: 100%;
         font-size: 18px;
     }
     .stats{

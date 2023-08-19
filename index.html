@@ -52,11 +52,15 @@
     </section>
     <section class="cards">
       <div class="form-overlay">
-        <form action="">
-          <input type="text" placeholder="Shorten a link here...">
-          <input type="submit" value="Shorten It!">
+        <form>
+          <div>
+            <input type="text" placeholder="Shorten a link here...">
+            <p class="error" id="urlError">Please add a link</p>
+          </div>
+          <div><input type="submit" value="Shorten It!"></div>
         </form>
       </div>
+      <div class="links"></div>
       <div class="stats">
         <h2>Advanced Statistics</h2>
           <p> Track how your links are performing across the web with our advanced statistics dashboard.</p>
@@ -130,5 +134,6 @@
       </a>
     </section>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
